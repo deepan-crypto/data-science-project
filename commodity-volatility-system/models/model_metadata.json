@@ -1,0 +1,36 @@
+{
+  "model_type": "IsolationForest",
+  "model_file": "anomaly_detector.pkl",
+  "trained_at": "2026-10-29T13:56:44.933018",
+  "training_samples": 3759,
+  "features": [
+    "daily_return",
+    "log_return",
+    "volume_change",
+    "rolling_std_7",
+    "rolling_std_20"
+  ],
+  "parameters": {
+    "n_estimators": 100,
+    "contamination": 0.05,
+    "random_state": 42
+  },
+  "training_stats": {
+    "anomalies_detected": 188,
+    "anomaly_rate": 5.0,
+    "score_min": -0.1366,
+    "score_max": 0.2246,
+    "score_mean": 0.1498
+  },
+  "commodities": [
+    "Copper",
+    "Crude Oil",
+    "Gold",
+    "Natural Gas",
+    "Silver"
+  ],
+  "date_range": {
+    "start": "2021-01-04",
+    "end": "2023-11-27"
+  }
+}
